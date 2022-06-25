@@ -52,6 +52,8 @@ lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 
 ![Total Summary Statistics.png](https://github.com/RyanJL18/MechaCar_Statistical_Analysis/blob/main/Resources/total_summary_table.png)
 
+The design specifications show that, in order to meet requirements, the PSI value should be lower than <100. As seen in both Lot 1 and Lot 2, the values are well below 100. However, in Lot 3 PSI is much higher than 100, with a value of 170. The overall psi value is still below 100 with 62 PSI as the mean for all the Lot data. Lot 3 is the only value that shows significant varriance.
+
 ### Deliverable 3:
 ## T-Tests on Suspension Coils
 
@@ -69,6 +71,15 @@ t.test(subset(suspension_coil$PSI,suspension_coil$Manufacturing_Lot == "Lot3"),m
 ```
 
 ![T-Tests.png](https://github.com/RyanJL18/MechaCar_Statistical_Analysis/blob/main/Resources/t-tests.png)
+
+*T-Test for Lot 1*
+The value does show that it is not statistically significant. However, with a P-Value of 1, we cannot reject the null hypothesis.
+
+*T-Test for Lot 2*
+The value does show that it is not statistically significant. However, with a P-Value of 0.6, we cannot reject the null hypothesis.
+
+*T-Test for Lot 3*
+The value does show that it is statistically significant. The P-Value being .04 shows that we can reject the null hypothesis.
 
 
 ### Deliverable 4:

@@ -87,12 +87,18 @@ The value does show that it is statistically significant. The P-Value being .04 
 
 Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
 
-In your description, address the following questions:
+Looking at MechaCar vs. the competition, consumers may look to a few other key factors when determining what vehicle fits their needs. Some examples of metrics that would be valuable to consumers include:
+- Cost
+- fuel efficiency
+- maintenance cost
+- safety rating
 
-What metric or metrics are you going to test?
+One of the biggest factors for consumers is going to be vehicle cost. We could determine vehicle cost and maintenance costs to see if car values could be considered more economical for consumers related to other values. 
 
-What is the null hypothesis or alternative hypothesis?
+For this statistical study we could provide the following hypotheses:
 
-What statistical test would you use to test the hypothesis? And why?
+- Null Hypothesis: The total value of the car is an economic option for consumers based on total cost and maintenance cost while factoring other key performance indicators when comparing to competitors.
+- Alternate Hypothesis: The total value of the car is NOT an economic option for consumers based on total cost and maintenance cost while factoring other key performance indicators when comparing to competitors.
 
-What data is needed to run the statistical test?
+A multiple linear regression model would be best to determine this given the multitude of factors that could have substantial significance for the values we are comparing. For this, it would be best to compare average cost of the vehicles alongside the average fuel economy, mpg, and maintenance costs (possibly other values as well) to determine which factors play the biggest role in total cost, and if these are comparable to the data from competitors.
+

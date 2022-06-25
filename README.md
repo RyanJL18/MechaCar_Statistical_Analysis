@@ -18,6 +18,18 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 ![Linear_Regression.png](https://github.com/RyanJL18/MechaCar_Statistical_Analysis/blob/main/Resources/Linear_regression_model_summary.png)
 
+When dealing with understanding statistical significance, the predetermined value for comparison should be greater than 0.05 to be considered insignificant. Looking at the image above, we see that only two of the values are less than the value 0.05 in relation to MPG, meaning there are only two values that are statistically significant. The values greater than 0.05 indicate a P-value with a random amount of varriance.
+
+- vehicle_length: 2.60e-12 (extremely close to 0) < 0.05, statistically significant
+- vehicle_weight: 0.0776 > 0, statistically insignificant
+- spoiler_angle: 0.3069 > 0, statistically insignificant
+- ground_clearance: 5.21e-08 (extremely close to 0) < 0.05, statistically significant
+- AWD: 0.1852 > 0, statistically insignificant
+
+The value that helps us determine if the slope of the linear model is considered to be zero is the overall P-Value. The value given for this lin reg analysis is 5.35e-11, which (although extremely close) is not zero for this model. However, the value 5.35e-11 is lower than the value of significance, meaning we can reject our null hypothesis.
+
+This linear model does predict mpg of MechaCar prototypes effectively as the R-Squared value is 0.7149. This value, which can be written as 71%, effectively determines the relationship with decent accuracy, although it could be improved.
+
 ### Deliverable 2:
 ## Summary Statistics on Suspension Coils
 
